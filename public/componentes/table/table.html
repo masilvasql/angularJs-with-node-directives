@@ -5,12 +5,7 @@
     <table class="table table-striped">
         <thead class="cabecalhoTable">
             <tr>
-                <th> 
-                    <a href="#" ng-click="ctrl.sortType='nome'; ctrl.sortReverse = !ctrl.sortReverse">Nome</a>
-                    <span ng-show="sortType == 'tastiness' && !sortReverse" class="fa fa-caret-down"></span>
-                    <img ng-show="sortType == 'nome' && sortReverse" src="./icons/seta-para-cima.png" alt="Smiley face" height="42" width="42">
-                    <span ng-show="sortType == 'tastiness' && sortReverse" class="fa fa-caret-up"></span>
-                </th>
+                <th> <a href="#" ng-click="ctrl.sortType='nome'; ctrl.sortReverse = !ctrl.sortReverse">Nome</a></th>
                 <th> <a href="#" ng-click="ctrl.sortType='idade'; ctrl.sortReverse = !ctrl.sortReverse">Idade</a></th>
                 <th> <a href="#" ng-click="ctrl.sortType='observacao'; ctrl.sortReverse = !ctrl.sortReverse">Observação</th></a>   
             </tr>
