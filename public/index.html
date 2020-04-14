@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Js example</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+    <!-- IMPORT SCRIPT ANGULAR -->
+    <script src="importsJS/angular.min.js"></script>
+
+    <!-- IMPORT MODULO DA APLICAÇÃO -->
+    <script src="EXEMPLOS/NomePastaRaiz/assets/app/modules/nomeModulo.module.js"></script>
+
+    <!-- IMPORT CONTROLLER APLICAÇÃO -->
+    <script src="EXEMPLOS/NomePastaRaiz/assets/app/controllers/nomeController.js"></script>
+
+    <!-- IMPORT SERVICE DA APLICAÇÃO -->
+    <script src="EXEMPLOS/NomePastaRaiz/assets/app/services/nomeServico.service.js"></script>
+
+    <link rel="stylesheet" href="EXEMPLOS/NomePastaRaiz/assets/app/css/myCss.css">
+
+
+    <!-- 
+        LEMBRAR DE FAZER OS IMPORTS DO FUSION, ACONSSELHO
+        ANALISAR UM index.html JÁ EXISTENTE NA APLICAÇÃO
+        PARA PEGAR OS CAMINHOS DOS ARQUIVOS E SÓ SUBSTITUIR
+        OS IMPORTS NECESSÁRIOS
+        Geralmente, quando se pega um index.html já existente,
+        basta alterar os imports dos seguitnes arquivos:
+        1 - Module
+        2 - Controller
+        3 - services
+        4 - CSS da aplicação que pode ser personalizado
+     -->
+
+
+</head>
+
+<body ng-app="pgm.nomeModulo" ng-controller="NomeControllerCtrl as ctrl">
+
+    <div class="myCard">
+        <my-cabecalho></my-cabecalho>
+    </div>
+
+    <div class="myCard">
+        <my-table></my-table>
+    </div>
+
+    <my-footer></my-footer>
+
+</body>
+
+</html>

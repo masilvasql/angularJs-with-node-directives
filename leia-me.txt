@@ -1,0 +1,18 @@
+Caso queiram executar a aplicação, seguir os seguintes passos:
+
+1 - Efetuar o download do NODE em: https://nodejs.org/en/
+2 - Instalar o Node, apenas avançar os paços
+3 - Feita a instalação, entrar no CMD e digitar o seguinte comando: node -v
+4 - Se apareceu a versão do node, digitar o seguinte comando : npm -v
+5 - Se apareceu a versão da npm, tudo correu bem, caso contrário, repita a instalação
+6 - acessar a raiz onde contem o arquivo app.js
+7 - executar o seguinte comando: npm install
+8 - vai levar alguns minutos (é pra ser rápido)
+9 - feito isto, digitar o comando: node app.js
+10 - irá aparecer no terminal a seguinte mensagem: Rodando na porta 4201
+11 - logo em seguida: acessar localhost:4201
+12 - para encerrar o processo, basta clicar em CTRL + C
+13 - um facilitador: digitar no terminal o seguitne comando: npm i -g nodemon
+14 - agora para acessar a aplicação, digitar nodemon app.js
+15 - agora toda vez que der um CTRL + S no código, o servidor irá reiniciar automaticamente, 
+     precisando apensa atualizar a página para trazer os novos recursos

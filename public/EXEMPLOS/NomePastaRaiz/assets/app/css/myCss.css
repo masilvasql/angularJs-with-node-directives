@@ -1,0 +1,56 @@
+.myCard{
+    margin:25px;
+    border-width: 2px ;
+    border-color: #34495e;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #a4b0be;
+    transition: 0.5s
+}
+
+.widthMyInputSearch{
+    width: 50%;
+}
+
+.alinhaLadoAlado{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.myCard:hover{
+    margin:25px;
+    border-width: 2px ;
+    border-color: #34495e;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #079992;
+}
+
+.footer {
+    border-top-width: 3px;
+    border-top-color: red;
+    border-style: solid;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495e;
+}
+
+.tituloTable{
+    background-color: #079992;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.cabecalhoTable{
+    background-color: rgba(56, 173, 169,0.5);
+}
+
+.tituloTabela{
+    color:#fff;
+    font-size: 18px;
+}

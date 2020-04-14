@@ -1,0 +1,29 @@
+<div ng-if="ctrl.registros.length > 0">
+    <div class="text-center tituloTable">
+        <strong class="tituloTabela">Usuários</strong>
+    </div>
+    <table class="table table-striped">
+        <thead class="cabecalhoTable">
+            <tr>
+                <th> 
+                    <a href="#" ng-click="ctrl.sortType='nome'; ctrl.sortReverse = !ctrl.sortReverse">Nome</a>
+                    <span ng-show="sortType == 'tastiness' && !sortReverse" class="fa fa-caret-down"></span>
+                    <img ng-show="sortType == 'nome' && sortReverse" src="./icons/seta-para-cima.png" alt="Smiley face" height="42" width="42">
+                    <span ng-show="sortType == 'tastiness' && sortReverse" class="fa fa-caret-up"></span>
+                </th>
+                <th> <a href="#" ng-click="ctrl.sortType='idade'; ctrl.sortReverse = !ctrl.sortReverse">Idade</a></th>
+                <th> <a href="#" ng-click="ctrl.sortType='observacao'; ctrl.sortReverse = !ctrl.sortReverse">Observação</th></a>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pessoa in ctrl.registros | filter:ctrl.searchQuery | orderBy:ctrl.sortType:ctrl.sortReverse">
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.idade}}</td>
+                <td>{{pessoa.observacao}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="text-center" ng-if="ctrl.registros.length == 0">
+    <h3 class="alert alert-warning">Sem Registros Para Serem Exibidos!!!</h3>
+</div>
